@@ -1,0 +1,18 @@
+using System;
+
+namespace Convert
+{
+    class Uppercase
+    {
+        public static void Main(string[] args)
+        {
+            string name;
+            Console.WriteLine("Enter your name");
+            name = Console.ReadLine();
+            string [] nameArray = new string [1];
+            nameArray[0] = name;
+            string newName = nameArray[0].ToUpper();
+            Console.WriteLine(newName);
+        }
+    }
+}
