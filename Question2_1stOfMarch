@@ -1,0 +1,25 @@
+using System;
+
+namespace Smallest
+{
+    class Index
+    {
+       static int smallestIndex(int [] arrayElements, int size){
+       int minimum = arrayElements[0];
+       int minimumIndex = 0;
+           for(int i = 0; i < size; i++){
+               if(arrayElements[i] < minimum){
+                   minimum = arrayElements[i];
+                   minimumIndex = i;
+               }
+           }
+           return minimumIndex;
+       }
+       public static void Main(string[] args)
+        {
+            int[] ourArray = {120,25,37,4,15};
+            int answer = smallestIndex(ourArray, ourArray.Length);
+            Console.WriteLine(answer);
+        }
+    }
+}
