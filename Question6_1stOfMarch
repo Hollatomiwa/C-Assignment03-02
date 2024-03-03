@@ -1,0 +1,21 @@
+using System;
+
+namespace Number
+{
+    class Checking
+    {
+      public static void Main(string[] args)
+        {
+            int number;
+            Console.WriteLine("Enter the number");
+            number = int.Parse(Console.ReadLine());
+            if(number == 0){
+                Console.WriteLine(number + " is zero");
+            } else if (number > 0){
+                Console.WriteLine(number + " is positive");
+            } else {
+                Console.WriteLine(number + " is negative");
+            }
+        }
+    }
+}
